@@ -6,12 +6,18 @@
   --section-background: #ECF2F7;
   --white-color: #ffffff;
   --h1-desktop: 65px;
+  --h1-mobile:41px;
   --regular-font: 20px;
   --content-spacing: 30px;
   --section-spacing: 70px;
   --list-spacing: 15px;
   --footer-padding: 50px;
-  --header-padding: 30px;
+   --padding:20px;
+  --section-mob-spacing:20px;
+  --header-padding: 15px;
+  --section-block-padding:50px;
+  --section-mob-block-padding:40px;
+
 
 }
 
@@ -45,15 +51,11 @@ body {
 
 #navbarSection {
   background-color: var(--primary-color);
-  height: 800px;
+  height: 700px;
   position: relative;
-  margin-bottom: var(--content-spacing);
 }
 
-#partners {
-  margin-bottom: var(--section-spacing);
-  padding-block: var(--footer-padding);
-}
+
 
 #Slidesection {
   position: absolute;
@@ -121,12 +123,10 @@ body {
   letter-spacing: -0.2px;
 }
 
-#Stats,
-#Pricing {
-  margin-bottom: var(--section-spacing);
-  padding-block: var(--footer-padding);
-}
 
+#partners, #Stats, #stats2, #Pricing, #testimonial{
+padding-block: var(--section-block-padding);
+}
 
 .statics {
   max-width: 410px;
@@ -156,11 +156,7 @@ body {
 
 }
 
-#Pricing,
-#testimonial {
-  background-color: var(--section-background);
-  padding-block: var(--footer-padding);
-}
+
 
 .testimonial-content {
   max-width: 450px;
@@ -400,15 +396,6 @@ body {
   border-radius: 8px;
 }
 
-@media only screen and (max-width:576px) {
-  .discount {
-
-
-    padding: 3px 5px;
-
-  }
-}
-
 footer {
   background-color: var(--primary-color);
   padding: var(--footer-padding);
@@ -474,4 +461,54 @@ footer ul li {
 .fa-x-twitter:hover {
   background-color: white;
   color: #000 !important;
+}
+
+@media only screen and (max-width:768px) {
+  .discount {
+   padding: 3px 5px;
+
+  }
+  .content h1{
+    font-size: var(--h1-mobile);
+    line-height: 50px;
+  }
+  #navbarSection{
+    height: 750px;
+  }
+  #partners, #Stats, #stats2, #Pricing, #testimonial{
+    padding-block: var(--section-mob-block-padding);
+    }
+  .play{
+    top: 30px;
+  }
+
+
+footer{
+  padding-block: var(--footer-padding);
+  padding-inline: 10px;
+}
+:root{
+  --content-spacing:20px;
+}
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+
+  content h1{
+    font-size: var(--h1-desktop);
+  }
+}
+@media only screen and (min-width:768px) and (max-width:992px) {
+  #navbarSection {
+   
+    height: 1000px !important;
+   
+  }
+}
+@media only screen and (min-width:992px) and (max-width:1399px) {
+  #navbarSection {
+   
+    height: 600px !important;
+   
+  }
 }
