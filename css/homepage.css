@@ -80,6 +80,7 @@ body {
   letter-spacing: 0.2px;
 }
 
+
 .content p {
   font-size: var(--regular-font);
   opacity: 0.8;
@@ -375,10 +376,13 @@ padding-block: var(--section-block-padding);
 }
 
 .nav-item .nav-link {
-  color: var(--white-color);
+  color: var(--white-color) !important;
   font-weight: 600;
   font-size: 18px !important;
   transition: all 0.3s ease-in;
+}
+.dropdown-item{
+  font-size: 18px;
 }
 
 .nav-item .nav-link:hover{
