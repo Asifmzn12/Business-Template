@@ -1,7 +1,7 @@
 :root {
   --primary-color: #161C2D;
   --green: #68D585;
-  --blue: rgb(71, 59, 240);
+  --blue: #473bf0;
   --body-background: #F4F7FA;
   --section-background: #ECF2F7;
   --white-color: #ffffff;
@@ -57,6 +57,7 @@ body {
 
 
 
+
 #Slidesection {
   position: absolute;
   top: 50%;
@@ -93,7 +94,11 @@ body {
   font-size: var(--regular-font);
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.5s ease-in;
 
+}
+.content a:hover{
+  text-decoration: underline;
 }
 
 .video {
@@ -182,8 +187,12 @@ padding-block: var(--section-block-padding);
   line-height: 32px;
   margin-bottom: var(--content-spacing);
   display: inline-block;
+  transition: all 0.3s ease-in;
 }
 
+.statics a:hover{
+  text-decoration: underline;
+}
 #pricing ul li:last-child {
   margin-bottom: 30px !important;
 }
@@ -207,21 +216,15 @@ padding-block: var(--section-block-padding);
   font-weight: bold;
   margin-bottom: var(--list-spacing);
   display: inline-block;
+  transition: all 0.3s ease-in;
 
 }
-
-.trialbtn {
-  text-decoration: none;
-  font-size: var(--regular-font);
-  background-color: #EDECFD;
-  color: var(--blue);
-  border-radius: 8px;
-  padding: 15px;
-  font-weight: bold;
-  margin-bottom: var(--list-spacing);
-  display: inline-block;
-
+.trialbtn:hover{
+  background-color:#100972;
+  color: var(--white-color);
 }
+
+
 
 
 #Pricing ul li {
@@ -371,14 +374,17 @@ padding-block: var(--section-block-padding);
   transition: transform 0.3s ease;
 }
 
-.nav-item>.nav-link {
+.nav-item .nav-link {
   color: var(--white-color);
   font-weight: 600;
+  font-size: 18px !important;
+  transition: all 0.3s ease-in;
 }
 
-.nav-item a {
-  transition: all 0.2s ease-in;
+.nav-item .nav-link:hover{
+opacity: 0.7;
 }
+
 
 .navbar-brand {
   color: var(--white-color) !important;
@@ -390,10 +396,12 @@ padding-block: var(--section-block-padding);
   display: inline-block;
   text-align: center;
   min-width: 177px;
-
-  height: 45px;
-
+  height: 45px; 
   border-radius: 8px;
+  transition: all 0.3s ease-in;
+}
+.nav-btn:hover{
+  background-color: #100972;
 }
 
 footer {
@@ -402,15 +410,20 @@ footer {
   color: var(--white-color);
 }
 
-footer a {
+footer a:not(.social-icons a) {
   text-decoration: none;
   color: var(--white-color);
   font-size: 17px;
+  transition: all 0.3s ease-in;
 
+}
+footer a:not(.social-icons a):hover{
+  text-decoration: underline;
+  opacity: 0.7;
 }
 
 footer p {
-  font-size: 15px;
+  font-size: 20px;
   opacity: 0.7;
   margin-bottom: 10px;
   font-weight: bold;
@@ -486,6 +499,9 @@ footer ul li {
 footer{
   padding-block: var(--footer-padding);
   padding-inline: 10px;
+}
+.navbar-brand img{
+  max-width: 220px;
 }
 :root{
   --content-spacing:20px;
