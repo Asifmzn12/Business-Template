@@ -490,7 +490,7 @@ footer ul li {
     line-height: 50px;
   }
   #navbarSection{
-    height: 781px;
+    height: 780px;
   }
   #partners, #Stats, #stats2, #Pricing, #testimonial{
     padding-block: var(--section-mob-block-padding);
